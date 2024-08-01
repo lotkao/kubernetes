@@ -1,5 +1,10 @@
 # K8s Cheat Sheet
 
+## Add cluster to local kube config.
+```bash
+aws eks update-kubeconfig --region <region-code> --name <cluster-name>
+```
+
 ## Deleting the undeletable
 
 ### Force delete a pod
