@@ -1,14 +1,15 @@
 # K8s Cheat Sheet
 
-## Change kube context
+## Kube configuration
+
+### Add new cluster to local kube config
+```bash
+aws eks update-kubeconfig --region <region-code> --name <cluster-name>
+```
+### Change kube context
 
 ```bash
 kubectl config use-context <context>
-```
-
-## Add cluster to local kube config.
-```bash
-aws eks update-kubeconfig --region <region-code> --name <cluster-name>
 ```
 
 ## Deleting the undeletable
