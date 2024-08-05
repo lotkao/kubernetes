@@ -27,4 +27,4 @@ The solution is edit the Ingress and remove the `finalizers`:
   finalizers:
     - ingress.k8s.aws/resources
 ```
-After deleting these lines, and saving your changes, the ingress should get deleted.
+After deleting these lines, and saving your changes, the ingress should get deleted. You may have to delete an orphaned Target Group via the AWS console.
