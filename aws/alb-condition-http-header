@@ -7,10 +7,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-name
+  name: my-ingress-name
   namespace: ns
   labels:
-  app: app-name
+  app: my-app-name
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -31,11 +31,11 @@ metadata:
     rules:
       - http:
         paths:
-          - path: /path-name-or-just-slash-for-all-paths
+          - path: /path-or-just-a-slash-for-all-paths
             pathType: Prefix
             backend:
               service:
-                name: myservicename
+                name: my-service-name
                 port:
                 number: 80
 
