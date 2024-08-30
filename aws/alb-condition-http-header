@@ -24,7 +24,7 @@ metadata:
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
     alb.ingress.kubernetes.io/subnets: subnet-1a,subnet-1b
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    alb.ingress.kubernetes.io/conditions.myservicename: >
+    alb.ingress.kubernetes.io/conditions.my-service-name: >
       [{"field":"http-header","httpHeaderConfig":{"httpHeaderName":"HEADER-NAME","values":["HEADER-VALUE"]}}]
   spec:
     ingressClassName: alb
