@@ -4,7 +4,7 @@
 
 ### Force delete a pod
 ```bash
-kubectl delete pod <pod-name> --grace-period=0 --force -n <namespace>
+kubectl delete pod <pod-name> -n <namespace> --grace-period=0 --force 
 ```
 
 ## AWS Specific
